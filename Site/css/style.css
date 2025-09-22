@@ -1,0 +1,336 @@
+:root{
+  --hero-height: 60vh;
+}
+
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('../images/Fond.png') center/cover no-repeat;
+  height: var(--hero-height);
+  min-height: 360px;
+}
+
+.carte img{
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  :root{ --hero-height: 45vh; }
+  .carte img{ 
+    height: auto; 
+    }
+}
+
+body{background-color:#f8f9fa}
+
+/* Taille Logo */
+.navbar-logo{ 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: inline-block; 
+}
+
+@media (max-width: 576px){
+  .navbar-logo{ width:32px; height:32px; }
+}
+
+/* Barre Navigation transparence */
+#mainNav.navbar-transparent{ background: transparent; transition: background .3s ease, box-shadow .3s ease; }
+#mainNav.navbar-scrolled{ 
+  background: rgba(47,111,209,0.98); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1030;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.apropos-hero{
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  background: #3777cc; 
+  color: #fff;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+.apropos-title{ 
+    font-size:2.25rem; 
+    font-weight:700; 
+}
+
+.apropos-lead{ 
+    font-size:1.05rem; 
+    max-width:520px; 
+}
+
+.decor-bar{ 
+    width:12px; 
+    height:80px; 
+    background:#fff; 
+    border-radius:2px; 
+}
+
+.apropos-img{ 
+    width:420px; 
+    height:420px; 
+    object-fit:cover; 
+    border-radius:50%; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12); 
+}
+
+.apropos-list li{ 
+    margin-bottom:0.5rem; 
+}
+
+@media (max-width: 992px){
+  .apropos-img{ 
+    width:280px; 
+    height:280px; 
+    }
+
+  .apropos-hero{ 
+    padding: 2.5rem 0; 
+    }
+}
+
+/* offre / Tarifs */
+.offre-bloc, .offres-bloc{
+  margin-top: -40px;
+  background: linear-gradient(180deg, rgba(47,111,209,0.06) 0%, rgba(47,111,209,0.02) 100%);
+  padding: 2.25rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(47,111,209,0.06);
+}
+.offre-carte{ overflow: hidden; border-radius:4px; }
+.offre-carte .offre-banner{ 
+    background: #2f6fd1; 
+    color: #fff; 
+}
+
+.offre-carte .offre-img{ 
+    width: 100%; 
+    display: block; 
+}
+
+.offre-carte .offre-body{ 
+    background: rgba(47,111,209,0.12); 
+}
+
+.offre-carte.text-white .offre-body{ 
+    background: #2f6fd1; 
+}
+
+.offre-carte .offre-title{ 
+    color: #fff; 
+}
+
+.offre-carte .offre-prix{ 
+    color: #fff; 
+}
+
+.offre-carte.offre-center{ 
+    /* Aligner carte centre */ 
+    border-radius:6px; 
+}
+
+.offre-carte.offre-center .offre-banner{ 
+    background: #fff; 
+}
+
+.offre-carte.offre-center .offre-banner h5{ 
+    color: #2f6fd1; 
+}
+
+.offre-carte.offre-center .offre-body{ 
+    background: #fff; 
+}
+
+.offre-carte.offre-center .offre-prix{ 
+    color: #2f6fd1; 
+}
+
+.offre-carte .btn-outline-light{ border-color: rgba(255,255,255,0.4); color: #fff; }
+.offre-carte .btn-outline-light:hover{ background: rgba(255,255,255,0.08); }
+
+.offre-carte{ display:flex; flex-direction:column; height:100%; }
+.offre-carte .offre-img{ /* Taille uniforme des images */
+  flex: 0 0 auto;
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+.offre-body{ 
+    flex:0 0 auto; 
+}
+
+@media (max-width: 991px){
+  .offre-bloc{ 
+    margin-top: 0; 
+}
+  .offre-carte .offre-img{ 
+    max-height:140px; 
+    }
+}
+
+/* Section evenement */
+.event-carte .carte-img-top{ 
+    max-height:160px; 
+    object-fit:cover; 
+}
+.event-carte .badge{ 
+    font-size:0.9rem; 
+    padding:0.45rem 0.6rem; 
+}
+
+/* Footer */
+.site-footer{ 
+    background:#2f6fd1; 
+}
+.site-footer a { 
+    color: #fff; 
+    text-decoration: none; 
+}
+.site-footer .footer-logo img{ 
+    border:4px solid rgba(255,255,255,0.15); 
+}
+.site-footer .social-icons a{ 
+    font-size:1.1rem; 
+}
+.site-footer .petit{ 
+    opacity:0.95; 
+}
+
+@media (max-width: 767px){
+  .site-footer .text-md-start{ 
+    text-align: center; 
+}
+  .site-footer .text-md-end{ 
+    text-align:center; 
+    margin-top:0.5rem; 
+}
+}
+
+/* Scroll event */
+.events-hero{
+  width:100%;
+  background: linear-gradient(180deg, rgba(47,111,209,0.06), rgba(47,111,209,0.02));
+  padding: 2.5rem 0;
+}
+.events-scroll-blocper{ 
+    overflow: hidden; 
+    padding: 1.25rem 0; 
+}
+
+.events-scroll{
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+
+.events-scroll::-webkit-scrollbar{ 
+    height: 8px; 
+}
+
+.events-scroll::-webkit-scrollbar-thumb{ 
+    background: rgba(0,0,0,0.2); 
+    border-radius:4px; 
+}
+
+.event-item{ 
+    flex: 0 0 320px; 
+    scroll-snap-align: start; 
+}
+
+.event-item{ 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+}
+
+.event-item .carte-img-top{ 
+    flex: 0 0 auto; 
+    height: 220px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.event-item .carte-body{ 
+    flex:0 0 auto; 
+}
+
+.carte-body{
+  padding: 1rem;
+  color: #222;
+}
+
+.offre-carte .offre-body{
+  padding: 1rem;
+  color: #fff; 
+}
+
+@media (max-width: 576px){
+  .event-item{ flex: 0 0 260px; }
+}
+
+.carte.h-100 > .carte-img-top,
+.carte > .carte-img-top {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px){
+  .offre-carte .offre-img, .event-item .carte-img-top, .carte.h-100 > .carte-img-top, .carte > .carte-img-top {
+    height: 160px;
+  }
+}
+
+.membre-avatar{ 
+    width: 96px; 
+    height: 96px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border:4px solid rgba(0,0,0,0.05); 
+}
+
+.carte{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: .5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+.carte.p-3{ 
+  padding: 1rem; 
+}
+
+.carte.text-center{ 
+    text-align:center;
+}
+
+#membre .carte-title,
+
+#membre .carte-text{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#membre .carte-title{ 
+    margin-top: 0.25rem; 
+    margin-bottom: 0.25rem; 
+}
+#membre .carte-text{ 
+    margin-bottom: 0; 
+    opacity: 0.85; 
+}

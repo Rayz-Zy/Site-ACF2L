@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aéroclub - Accueil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+  <!-- Barre de Navigation -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/Logo.png" alt="logo" class="navbar-logo me-2">
+          <span>Aéroclub</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#flotte">Flotte</a></li>
+            <li class="nav-item"><a class="nav-link" href="#membre">Membres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- En-tete -->
+    <header id="hero" class="hero text-white text-center d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Bienvenue à l'Aéroclub</h1>
+        <p class="lead">Vols d'initiation, formation pilote, et sorties aériennes pour tous les passionnés.</p>
+        <a href="#offre" class="btn btn-light btn-lg mt-3">Découvrir</a>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+
+        <!-- A propos -->
+        <section id="apropos" class="mb-5">
+          <div class="apropos-hero">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="d-flex align-items-start">
+                    <div class="decor-bar me-3 d-none d-md-block"></div>
+                    <div>
+                      <h2 class="apropos-title">Nos Moyens Pédagogiques</h2>
+                      <p class="apropos-lead">Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
+                      <ul class="apropos-list mt-4">
+                        <li>Une surface totale de 45 hectares dégagés</li>
+                        <li>Deux pistes en X de 800 et 450 m</li>
+                        <li>Un hydrosurface de 8 hectares.</li>
+                        <li>Trois hangars avec surface couverte de 4300 m².</li>
+                        <li>Locaux administratifs informatisés.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                  <img src="images/aerodrome.jpg" alt="aerodrome" class="apropos-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <br>
+        <!-- Offres / Tarifs -->
+        <section id="offre" class="mb-5">
+          <div class="offres-bloc position-relative py-5">
+            <h2 class="apropos-title">Nos Tarifs</h2>
+            <br>
+            <div class="row justify-content-center gx-4">
+              <div class="col-lg-10">
+                <div class="row gx-5 gy-4 align-items-stretch">
+
+                  <!-- Gauche -->
+                  <div class="col-md-4">
+                    <div class="offre-carte text-white">
+                      <div class="offre-banner bg-primary text-center py-3">
+                        <h5 class="mb-0">Baptême de l'air<br>ULM Pendulaire</h5>
+                      </div>
+                      <img src="images/pendulaire1.jpg" alt="ULM pendulaire" class="img-fluid offre-img">
+                      <div class="offre-body p-4">
+                        <h6 class="offre-title">Prestation</h6>
+                        <p class="petit">Accompagné par un instructeur diplômé, vous découvrirez le vol en ULM. Survol de la région et 20 minutes de vol.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <a href="#contact" class="btn btn-outline-light btn-sm rounded-pill">Réserver</a>
+                          <strong class="offre-prix">190,00 €</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Milieu -->
+                  <div class="col-md-4">
+                    <div class="offre-carte offre-center bg-white shadow-lg position-relative">
+                      <div class="offre-banner text-center py-3">
+                        <h5 class="mb-0 text-primary">Baptême de l'air<br>ULM AutoGire</h5>
+                      </div>
+                      <img src="images/troisAutogires.jpg" alt="AutoGire" class="img-fluid offre-img">
+                      <div class="offre-body p-4 text-dark">
+                        <h6 class="offre-title">Prestation</h6>
+                        <p class="petit">Vous prendrez pour la première fois les commandes d'un ULM à bord d'un appareil dont la simplicité vous étonnera. Instructeur diplômé et double commande pour la sécurité.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <a href="#contact" class="btn btn-primary btn-sm rounded-pill">Réserver</a>
+                          <strong class="offre-prix text-primary">260,00 €</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Droite -->
+                  <div class="col-md-4">
+                    <div class="offre-carte text-white">
+                      <div class="offre-banner bg-primary text-center py-3">
+                        <h5 class="mb-0">Baptême de l'air<br>Multi - Axes</h5>
+                      </div>
+                      <img src="images/multi_axe2.jpg" alt="Multi-axes" class="img-fluid offre-img">
+                      <div class="offre-body p-4">
+                        <h6 class="offre-title">Prestation</h6>
+                        <p class="petit">Prenez place à bord d'un ULM dont le comportement vous étonnera. Instructeur diplômé pour un vol sécurisé de 30 minutes.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <a href="#contact" class="btn btn-outline-light btn-sm rounded-pill">Réserver</a>
+                          <strong class="offre-prix">380,00 €</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Événements à venir -->
+        <section id="events" class="mb-5">
+          <div class="events-hero">
+            <div class="container">
+              <h2 class="text-center mb-4">Événements à venir</h2>
+            </div>
+          </div>
+
+          <div class="events-scroll-blocper">
+            <div class="container">
+              <div class="events-scroll">
+
+              <article class="event-item carte event-carte">
+                <img src="images/event.jpg" class="carte-img-top" alt="Événement 1">
+                </br>
+                <div class="carte-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="carte-title mb-0">Baptême collectif</h5>
+                    <span class="badge bg-primary">22 septembre</span>
+                  </div>
+                  <p class="carte-text petit">Journée portes ouvertes et vols d'initiation en ULM. Réservation sur place ou en ligne.</p>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm">S'inscrire</a>
+                </div>
+              </article>
+
+              <article class="event-item carte event-carte">
+                <img src="images/event.jpg" class="carte-img-top" alt="Événement 2">
+                </br>
+                <div class="carte-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="carte-title mb-0">Week-end navigation</h5>
+                    <span class="badge bg-primary">03 novembre</span>
+                  </div>
+                  <p class="carte-text petit">Sortie de deux jours pour découvrir la navigation aérienne encadrée par nos pilotes.</p>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm">En savoir plus</a>
+                </div>
+              </article>
+
+              <article class="event-item carte event-carte">
+                <img src="images/event.jpg" class="carte-img-top" alt="Événement 3">
+                </br>
+                <div class="carte-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="carte-title mb-0">Formation sécurité</h5>
+                    <span class="badge bg-primary">18 novembre</span>
+                  </div>
+                  <p class="carte-text petit">Atelier et briefing sécurité pour tous les membres et pilotes.</p>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm">S'inscrire</a>
+                </div>
+              </article>
+
+              <article class="event-item carte event-carte">
+                <img src="images/event.jpg" class="carte-img-top" alt="Événement 4">
+                </br>
+                <div class="carte-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="carte-title mb-0">Balade panoramique</h5>
+                    <span class="badge bg-primary">10 octobre</span>
+                  </div>
+                  <p class="carte-text petit">Sortie découverte pour admirer la région depuis les airs.</p>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm">S'inscrire</a>
+                </div>
+              </article>
+
+              <article class="event-item carte event-carte">
+                <img src="images/event.jpg" class="carte-img-top" alt="Événement 5">
+                </br>
+                <div class="carte-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h5 class="carte-title mb-0">Balade panoramique</h5>
+                    <span class="badge bg-primary">14 octobre</span>
+                  </div>
+                  <p class="carte-text petit">Sortie découverte pour admirer la région depuis les airs.</p>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm">S'inscrire</a>
+                </div>
+              </article>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Flotte -->
+        <section id="flotte" class="mb-5">
+          <h2 class="mb-4">Notre flotte</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="carte h-100">
+                <img src="images/autogire.jpg" class="carte-img-top" alt="Avion léger">
+                <div class="carte-body">
+                  <h5 class="carte-title">Avion léger</h5>
+                  <p class="carte-text">Parfait pour la formation et les vols locaux.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="carte h-100">
+                <img src="images/ulm.jpeg" class="carte-img-top" alt="ULM">
+                <div class="carte-body">
+                  <h5 class="carte-title">ULM</h5>
+                  <p class="carte-text">Idéal pour les balades et la découverte à petit prix.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="carte h-100">
+                <img src="images/multi_axe.jpg" class="carte-img-top" alt="Planeur">
+                <div class="carte-body">
+                  <h5 class="carte-title">Planeur</h5>
+                  <p class="carte-text">Expériences silencieuses et sensation pure du vol.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Membres -->
+        <section id="membre" class="mb-5">
+          <h2 class="mb-4">Nos membres</h2>
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-3">
+              <div class="carte text-center p-3">
+                <div class="carte-body">
+                  <img src="images/profil.jpg" alt="Jean Dupont" class="membre-avatar mb-2">
+                  <h5 class="carte-title">Instructeur</h5>
+                  <p class="carte-text">Jean Dupont — 10 ans d'expérience</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="carte text-center p-3">
+                <div class="carte-body">
+                  <img src="images/profil.jpg" alt="Marie Martin" class="membre-avatar mb-2">
+                  <h5 class="carte-title">Président</h5>
+                  <p class="carte-text">Marie Martin — Pilote et organisatrice</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="carte text-center p-3">
+                <div class="carte-body">
+                  <img src="images/profil.jpg" alt="Lucas Bernard" class="membre-avatar mb-2">
+                  <h5 class="carte-title">Mécanicien</h5>
+                  <p class="carte-text">Lucas Bernard — Entretien et sécurité</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="carte text-center p-3">
+                <div class="carte-body">
+                  <img src="images/profil.jpg" alt="Sophie Renard" class="membre-avatar mb-2">
+                  <h5 class="carte-title">Trésorier</h5>
+                  <p class="carte-text">Sophie Renard — Gestion administrative</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mb-5">
+          <h2>Contact</h2>
+          <p>Envoyez-nous un message pour en savoir plus ou réserver un vol d'initiation.</p>
+          <form class="row g-3" novalidate>
+            <div class="col-md-6">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="vous@example.com" required>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="site-footer text-white py-5">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <div class="footer-logo me-3">
+                
+            <img src="images/Logo.png" alt="logo" class="rounded-circle" style="width: 64px; height: 64px; object-fit: cover;">
+              </div>
+              <div>
+                <strong>Aéro-Club de Frotey-les-Lure</strong>
+                <div class="petit">Association enregistrée n°04674 - Agrément n° AS70986858</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>62, Avenue de la République, 70200 Lure</p>
+            <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>acf2l@gmail.com</p>
+            <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>+33 01 02 03 04 05</p>
+          </div>
+
+          <div class="col-md-4 text-center text-md-end">
+            <div class="mb-2 social-icons">
+              <a href="#" class="text-white me-2"><i class="bi bi-x-lg"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="petit">© ACF2L Tous droits réservés</div>
+            <div class="petit">Un projet Universitaire de Rayane Adjaoud & Jules Colas--Fiaschi</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      // Scrolling Barre de Navigation
+      (function(){
+        const nav = document.getElementById('mainNav');
+        function onScroll(){
+          if(window.scrollY > 50){
+            nav.classList.add('navbar-scrolled');
+            nav.classList.remove('navbar-transparent');
+          } else {
+            nav.classList.remove('navbar-scrolled');
+            nav.classList.add('navbar-transparent');
+          }
+        }
+        document.addEventListener('scroll', onScroll, { passive: true });
+        
+        onScroll();
+      })();
+    </script>
+    <script>
+      (function(){
+        const scroller = document.querySelector('.events-scroll');
+        if(!scroller) return;
+        let isDown = false, startX, scrollLeft;
+        scroller.addEventListener('mousedown', (e)=>{
+          isDown = true; scroller.classList.add('active-drag'); startX = e.pageX - scroller.offsetLeft; scrollLeft = scroller.scrollLeft;
+        });
+        scroller.addEventListener('mouseleave', ()=>{ isDown = false; scroller.classList.remove('active-drag'); });
+        scroller.addEventListener('mouseup', ()=>{ isDown = false; scroller.classList.remove('active-drag'); });
+        scroller.addEventListener('mousemove', (e)=>{
+          if(!isDown) return; e.preventDefault(); const x = e.pageX - scroller.offsetLeft; const walk = (x - startX) * 1; scroller.scrollLeft = scrollLeft - walk;
+        });
+      })();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
