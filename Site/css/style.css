@@ -13,13 +13,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px){
-  :root{ --hero-height: 45vh; }
-  .carte img{ 
-    height: auto; 
-    }
-}
-
 body{background-color:#f8f9fa}
 
 /* Taille Logo */
@@ -29,10 +22,6 @@ body{background-color:#f8f9fa}
     object-fit: cover; 
     border-radius: 50%; 
     display: inline-block; 
-}
-
-@media (max-width: 576px){
-  .navbar-logo{ width:32px; height:32px; }
 }
 
 /* Barre Navigation transparence */
@@ -84,17 +73,6 @@ body{background-color:#f8f9fa}
 
 .apropos-list li{ 
     margin-bottom:0.5rem; 
-}
-
-@media (max-width: 992px){
-  .apropos-img{ 
-    width:280px; 
-    height:280px; 
-    }
-
-  .apropos-hero{ 
-    padding: 2.5rem 0; 
-    }
 }
 
 /* offre / Tarifs */
@@ -167,15 +145,6 @@ body{background-color:#f8f9fa}
     flex:0 0 auto; 
 }
 
-@media (max-width: 991px){
-  .offre-bloc{ 
-    margin-top: 0; 
-}
-  .offre-carte .offre-img{ 
-    max-height:140px; 
-    }
-}
-
 /* Section evenement */
 .event-carte .carte-img-top{ 
     max-height:160px; 
@@ -202,16 +171,6 @@ body{background-color:#f8f9fa}
 }
 .site-footer .petit{ 
     opacity:0.95; 
-}
-
-@media (max-width: 767px){
-  .site-footer .text-md-start{ 
-    text-align: center; 
-}
-  .site-footer .text-md-end{ 
-    text-align:center; 
-    margin-top:0.5rem; 
-}
 }
 
 /* Scroll event */
@@ -275,21 +234,11 @@ body{background-color:#f8f9fa}
   color: #fff; 
 }
 
-@media (max-width: 576px){
-  .event-item{ flex: 0 0 260px; }
-}
-
 .carte.h-100 > .carte-img-top,
 .carte > .carte-img-top {
   height: 220px;
   object-fit: cover;
   width: 100%;
-}
-
-@media (max-width: 768px){
-  .offre-carte .offre-img, .event-item .carte-img-top, .carte.h-100 > .carte-img-top, .carte > .carte-img-top {
-    height: 160px;
-  }
 }
 
 .membre-avatar{ 
@@ -333,4 +282,5 @@ body{background-color:#f8f9fa}
 #membre .carte-text{ 
     margin-bottom: 0; 
     opacity: 0.85; 
+
 }
